@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please complete this survey to help us improve this page</p>
+        <form  id="survey form">
+            <fieldset>
+                <div>
+                    <label class="info" id="name-label">Name <input class="info-input" id="name" type="text" placeholder="Enter your name"></label>
+                    <label class="info" id="email-label">Email <input class="info-input" id="email" type="email" placeholder="Enter your email"></label>
+                    <label class="info" id="number-label">Number <input class="info-input" id="number" type="number" pattern="[0-9]{8}" placeholder="Enter your number"></label>
+                </div>
+                <div class="studies">
+                    <label id="dropdown-label">What are you studying?
+                        <select id="dropdown">
+                            <option value="">Select one</option>
+                            <option value="1">Biology</option>
+                            <option value="2">Psicology</option>
+                            <option value="3">Mathematics</option>
+                            <option value="4">Other...</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <p>What are you using?</p>
+                    <label><input class="devices-label" name="device" type="radio"> PC</label>
+                    <label><input class="devices-label" name="device" type="radio"> Mobile</label>
+                </div>
+                <div>
+                    <p>What programming languages ​​do you know?</p>
+                    <label class="languages">
+                        <input class="input-checkbox" type="checkbox">
+                        Java
+                    </label>
+                    <label class="languages">
+                        <input class="input-checkbox" type="checkbox">
+                        C
+                    </label>
+                    <label class="languages">
+                        <input class="input-checkbox" type="checkbox">
+                        C++
+                    </label>
+                    <label class="languages">
+                        <input class="input-checkbox" type="checkbox">
+                        Python
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
